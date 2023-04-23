@@ -23,8 +23,8 @@ COPY --from=build ${DEPENDENCY}/BOOT-INF/lib /app/lib
 COPY --from=build ${DEPENDENCY}/META-INF /app/META-INF
 COPY --from=build ${DEPENDENCY}/BOOT-INF/classes /app
 
-ENV SERVER_URI "http://localhost:8282"
-ENV SPRING_PROFILE "local"
+ENV SERVER_URI "http://ms-config-server:8888"
+ENV SPRING_PROFILE "test"
 
 
 ENTRYPOINT ["java","-cp","app:app/lib/*","ucb.arqsoft.msgateway.MsGatewayApplicationKt"]
