@@ -1,0 +1,16 @@
+version: '2.4'
+services:
+    ms-gateway:
+        image: ms-gateway:0.0.1
+        restart: always
+        mem_limit: 400m
+        environment:
+          SERVER_URI: "${SERVER_URI}"
+          SPRING_PROFILE: "${SPRING_PROFILE}"
+    ms-discovery:
+        image: ms-discovery:0.0.1
+        restart: always
+        mem_limit: 400m
+        environment:
+          SERVER_URI: "${SERVER_URI}"
+          SPRING_PROFILE: "${SPRING_PROFILE}"
