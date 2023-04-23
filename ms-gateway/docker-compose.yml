@@ -4,13 +4,17 @@ services:
         image: ms-gateway:0.0.1
         restart: always
         mem_limit: 400m
-        environment:
-          SERVER_URI: "${SERVER_URI}"
-          SPRING_PROFILE: "${SPRING_PROFILE}"
+        ports:
+          - "8181:8181"
+#        environment:
+#          SERVER_URI: "${SERVER_URI}"
+#          SPRING_PROFILE: "${SPRING_PROFILE}"
     ms-discovery:
         image: ms-discovery:0.0.1
         restart: always
         mem_limit: 400m
-        environment:
-          SERVER_URI: "${SERVER_URI}"
-          SPRING_PROFILE: "${SPRING_PROFILE}"
+        ports:
+          - "8723:8723"
+#        environment:
+#          SERVER_URI: "${SERVER_URI}"
+#          SPRING_PROFILE: "${SPRING_PROFILE}"
