@@ -5,7 +5,7 @@ networks:
     driver: bridge
 services:
   ms-config-server:
-    image: ms-config-server:0.0.2
+    image: ms-config-server:0.0.1
     restart: always
     mem_limit: 400m
     ports:

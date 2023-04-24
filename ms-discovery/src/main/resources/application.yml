@@ -10,8 +10,3 @@ eureka:
     registerWithEureka: false
     serviceUrl:
       defaultZone: http://ms-discovery:8723/eureka/
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"

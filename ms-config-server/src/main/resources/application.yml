@@ -57,7 +57,3 @@ spring:
 encrypt:
   key: qNQAAAAdzc2gtcnNhAAABAQCywFF73XBnRMkEhYrZXU0f
 
-
-eureka:
-  client:
-    enabled: false
