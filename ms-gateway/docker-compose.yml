@@ -3,25 +3,27 @@ networks:
     network-database:
         external: true
 services:
-    ms-gateway:
-        image: ms-gateway:0.0.1
-        restart: always
-        mem_limit: 400m
-        ports:
-          - "8181:8181"
-        networks:
-          - network-database
-        environment:
-          SERVER_URI: "${SERVER_URI}"
-          SPRING_PROFILE: "${SPRING_PROFILE}"
     ms-discovery:
-        image: ms-discovery:0.0.1
-        restart: always
-        mem_limit: 400m
-        ports:
-          - "8723:8723"
-        networks:
-          - network-database
-        environment:
-          SERVER_URI: "${SERVER_URI}"
-          SPRING_PROFILE: "${SPRING_PROFILE}"
+      image: ms-discovery:0.0.1
+      restart: always
+      mem_limit: 400m
+      ports:
+        - "8723:8723"
+      networks:
+        - network-database
+      environment:
+        SERVER_URI: "${SERVER_URI}"
+        SPRING_PROFILE: "${SPRING_PROFILE}"
+    ms-gateway:
+      image: ms-gateway:0.0.1
+      restart: always
+      mem_limit: 400m
+      #ports:
+      #  - "8181:8181"
+      networks:
+        - network-database
+      environment:
+        SERVER_URI: "${SERVER_URI}"
+        SPRING_PROFILE: "${SPRING_PROFILE}"
+      depends_on:
+        - ms-discovery
