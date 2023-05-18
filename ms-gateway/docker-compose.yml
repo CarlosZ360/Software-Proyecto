@@ -3,25 +3,92 @@ networks:
     network-database:
         external: true
 services:
-    ms-gateway:
-        image: ms-gateway:0.0.1
-        restart: always
-        mem_limit: 400m
-        ports:
-          - "8181:8181"
-        networks:
-          - network-database
-        environment:
-          SERVER_URI: "${SERVER_URI}"
-          SPRING_PROFILE: "${SPRING_PROFILE}"
     ms-discovery:
-        image: ms-discovery:0.0.1
-        restart: always
-        mem_limit: 400m
-        ports:
-          - "8723:8723"
-        networks:
-          - network-database
-        environment:
-          SERVER_URI: "${SERVER_URI}"
-          SPRING_PROFILE: "${SPRING_PROFILE}"
+      image: ms-discovery:0.0.1
+      restart: always
+      mem_limit: 400m
+      ports:
+        - "8723:8723"
+      networks:
+        - network-database
+      environment:
+        SERVER_URI: "${SERVER_URI}"
+        SPRING_PROFILE: "${SPRING_PROFILE}"
+
+    ms-gateway:
+      image: ms-gateway:0.0.1
+      restart: always
+      mem_limit: 400m
+      networks:
+        - network-database
+      environment:
+        SERVER_URI: "${SERVER_URI}"
+        SPRING_PROFILE: "${SPRING_PROFILE}"
+      depends_on:
+        - ms-discovery
+
+    postgres:
+      image: postgres:15
+      ports:
+        - "5432:5432"
+      networks:
+        - network-database
+      environment:
+        POSTGRES_PASSWORD: password
+      volumes:
+        - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+        #windows
+        #- C:/Users/Nao/Desktop/postgres-arqui-2:/var/lib/postgresql/data
+        #Linux
+        #- /nao/Desktop/postgres-arqui-2:/var/lib/postgresql/data
+        - ${VOLUME_PATH}
+
+    keycloak:
+      image: quay.io/keycloak/keycloak:21.1.1
+      ports:
+        - "8080:8080"
+      networks:
+        - network-database
+      environment:
+        KEYCLOAK_ADMIN: StoryVerse-keycloak-3
+        KEYCLOAK_ADMIN_PASSWORD: H3cqnspoXmt:eS,LyV
+      volumes:
+        - ./mitema/:/opt/keycloak/themes/mitema/
+        - ./h2/:/opt/keycloak/data/h2/
+      # command: ["./opt/keycloak/bin/kc.sh start-dev"]
+      command: 
+      - start-dev 
+      - --import-realm
+
+    ms-user:
+      image: ms-user:0.0.1
+      restart: always
+      mem_limit: 400m
+      ports:
+        - "8008:8008"
+      networks:
+        - network-database
+      environment:
+        SERVER_URI: "${SERVER_URI}"
+        SPRING_PROFILE: "${SPRING_PROFILE}"
+        URL_DB: "${URL_DB}"
+        USERNAME_DB: "${USERNAME_DB}"
+        PASSWORD_DB: "${PASSWORD_DB}"
+        KEYCLOAK_USERINFO_URL: "${KEYCLOAK_USERINFO_URL}"
+        KEYCLOAK_ACCOUNT_URL: "${KEYCLOAK_ACCOUNT_URL}"
+      depends_on:
+        - ms-discovery
+        - postgres
+
+    frontend:
+      image: frontend:0.0.1
+      restart: always
+      ports:
+        - "4200:80"
+      networks:
+        - network-database
+      volumes:
+        - ./nginx.conf:/etc/nginx/nginx.conf
+      depends_on:
+        - ms-user
+
