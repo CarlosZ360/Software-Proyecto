@@ -9,7 +9,6 @@ COPY src src
 RUN ./mvnw install -DskipTests
 RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
 
-
 FROM eclipse-temurin:11
 
 #RUN mkdir -p /opt/arquitectura/logs
@@ -21,8 +20,7 @@ COPY --from=build ${DEPENDENCY}/BOOT-INF/lib /app/lib
 COPY --from=build ${DEPENDENCY}/META-INF /app/META-INF
 COPY --from=build ${DEPENDENCY}/BOOT-INF/classes /app
 
-ENV SERVER_URI "http://localhost:8723"
+ENV SERVER_URI "http://localhost:8888"
 ENV SPRING_PROFILE "test"
 
-#ENTRYPOINT ["java","-cp","app:app/lib/*","arquitectura.software.demo.DemoApplicationKt"]
 ENTRYPOINT ["java","-cp","app:app/lib/*","com.example.msdiscovery.MsDiscoveryApplicationKt"]

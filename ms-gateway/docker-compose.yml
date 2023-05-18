@@ -19,6 +19,8 @@ services:
       image: ms-gateway:0.0.1
       restart: always
       mem_limit: 400m
+      #ports:
+      #  - "8181:8181"
       networks:
         - network-database
       environment:
@@ -91,4 +93,3 @@ services:
         - ./nginx.conf:/etc/nginx/nginx.conf
       depends_on:
         - ms-user
-
