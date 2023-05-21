@@ -112,9 +112,14 @@ services:
       environment:
         SERVER_URI: "${SERVER_URI}"
         SPRING_PROFILE: "${SPRING_PROFILE}"
-        URL_DB: "${URL_DB}"
         USERNAME_DB: "${USERNAME_DB}"
         PASSWORD_DB: "${PASSWORD_DB}"
+        URL_DB: "${URL_DB}"
+        URL_ZIPKIN: "${URL_ZIPKIN}"
+        URL_EUREKA: "${URL_EUREKA}"
+        URL_KEYCLOAK: "${URL_KEYCLOAK}"
+        REALM_KEYCLOAK: "${REALM_KEYCLOAK}"
+        CREDENTIALS_SECRET_KEYCLOAK: "${CREDENTIALS_SECRET_KEYCLOAK}"
       depends_on:
         - ms-discovery
         - postgres
