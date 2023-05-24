@@ -63,6 +63,13 @@ services:
       - start-dev
       - --import-realm
 
+    # mailHog
+    mailhog:
+      image: mailhog/mailhog
+      ports:
+        - "8025:8025"
+        - "1025:1025"
+
     ms-user:
       image: ms-user:0.0.1
       restart: always
@@ -79,6 +86,12 @@ services:
         PASSWORD_DB: "${PASSWORD_DB}"
         KEYCLOAK_USERINFO_URL: "${KEYCLOAK_USERINFO_URL}"
         KEYCLOAK_ACCOUNT_URL: "${KEYCLOAK_ACCOUNT_URL}"
+        URL_ZIPKIN: "${URL_ZIPKIN}"
+        URL_EUREKA: "${URL_EUREKA}"
+        URL_KEYCLOAK: "${URL_KEYCLOAK}"
+        REALM_KEYCLOAK: "${REALM_KEYCLOAK}"
+        CREDENTIALS_SECRET_KEYCLOAK: "${CREDENTIALS_SECRET_KEYCLOAK}"
+        CLIENT_KEYCLOAK: "${CLIENT_KEYCLOAK}"
       depends_on:
         - ms-discovery
         - postgres
@@ -97,6 +110,7 @@ services:
 
     # Zipkin
     zipkin:
+      hostname: zipkin
       image: openzipkin/zipkin
       ports:
         - "9411:9411"
@@ -107,7 +121,7 @@ services:
       restart: always
       mem_limit: 400m
       ports:
-        - "7777:7777"
+        - "8010:7777"
       networks:
         - network-database
       environment:
