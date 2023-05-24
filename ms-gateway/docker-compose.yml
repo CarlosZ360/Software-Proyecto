@@ -121,7 +121,7 @@ services:
       restart: always
       mem_limit: 400m
       ports:
-        - "8010:7777"
+        - "7777:7777"
       networks:
         - network-database
       environment:
