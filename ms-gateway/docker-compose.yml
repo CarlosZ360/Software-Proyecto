@@ -14,8 +14,6 @@ services:
       environment:
         SERVER_URI: "${SERVER_URI}"
         SPRING_PROFILE: "${SPRING_PROFILE}"
-      volumes:
-        - C:/logs/ms-discovery:/logs
 
     ms-gateway:
       image: ms-gateway:0.0.1
@@ -30,8 +28,6 @@ services:
         SPRING_PROFILE: "${SPRING_PROFILE}"
       depends_on:
         - ms-discovery
-      volumes:
-        - C:/logs/ms-gateway:/logs
 
     postgres:
       image: postgres:15
@@ -67,6 +63,13 @@ services:
       - start-dev
       - --import-realm
 
+    # mailHog
+    mailhog:
+      image: mailhog/mailhog
+      ports:
+        - "8025:8025"
+        - "1025:1025"
+
     ms-user:
       image: ms-user:0.0.1
       restart: always
@@ -83,11 +86,15 @@ services:
         PASSWORD_DB: "${PASSWORD_DB}"
         KEYCLOAK_USERINFO_URL: "${KEYCLOAK_USERINFO_URL}"
         KEYCLOAK_ACCOUNT_URL: "${KEYCLOAK_ACCOUNT_URL}"
+        URL_ZIPKIN: "${URL_ZIPKIN}"
+        URL_EUREKA: "${URL_EUREKA}"
+        URL_KEYCLOAK: "${URL_KEYCLOAK}"
+        REALM_KEYCLOAK: "${REALM_KEYCLOAK}"
+        CREDENTIALS_SECRET_KEYCLOAK: "${CREDENTIALS_SECRET_KEYCLOAK}"
+        CLIENT_KEYCLOAK: "${CLIENT_KEYCLOAK}"
       depends_on:
         - ms-discovery
         - postgres
-      volumes:
-        - C:/logs/ms-user:/logs
 
     frontend:
       image: frontend:0.0.1
@@ -103,6 +110,7 @@ services:
 
     # Zipkin
     zipkin:
+      hostname: zipkin
       image: openzipkin/zipkin
       ports:
         - "9411:9411"
@@ -130,5 +138,3 @@ services:
       depends_on:
         - ms-discovery
         - postgres
-      volumes:
-        - C:/logs/ms-story:/logs
