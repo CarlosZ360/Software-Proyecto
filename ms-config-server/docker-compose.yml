@@ -12,3 +12,5 @@ services:
       - "8888:8888"
     networks:
       - pocketnet
+    volumes:
+      - C:/logs/ms-config-server:/logs

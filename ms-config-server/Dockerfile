@@ -15,7 +15,7 @@ FROM eclipse-temurin:11
 #RUN mkdir -p /opt/arquitectura/logs
 #VOLUME /opt/arquitectura/logs
 
-VOLUME /tmp
+VOLUME C:/logs/tmp
 ARG DEPENDENCY=/workspace/app/target/dependency
 COPY --from=build ${DEPENDENCY}/BOOT-INF/lib /app/lib
 COPY --from=build ${DEPENDENCY}/META-INF /app/META-INF
