@@ -10,35 +10,27 @@ spring:
   # Configura el uso de Spring Cloud Gateway
   cloud:
     gateway:
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
       global-cors:
         cors-configurations:
           '[/**]':
-            allowCredentials: false
-            allowedOrigins:
-              - "http://localhost:4200"
             allowedHeaders:
               - "Origin"
-              - "Access-Control-Allow-Origin"
               - "Content-Type"
               - "Accept"
               - "Authorization"
-              - "Origin, Accept"
+              - "Content-Length"
               - "X-Requested-With"
-              - "Access-Control-Request-Method"
-              - "Access-Control-Request-Headers"
-            exposedHeaders:
-              - "Origin"
-              - "Content-Type"
-              - "Accept"
-              - "Authorization"
-              - "Access-Control-Allow-Origin"
-              - "Access-Control-Allow-Credentials"
+            allowedOrigins:
+              - "http://localhost:4200"
             allowedMethods:
               - "GET"
               - "POST"
               - "PUT"
               - "DELETE"
               - "OPTIONS"
+
       routes:
         - id: ms-story
           uri: http://localhost:7777
@@ -53,6 +45,7 @@ spring:
           filters:
             - RewritePath=/usuarios/(?<path>.*), /$\{path}
 
+
 management:
   endpoints:
     web:
@@ -63,5 +56,5 @@ eureka:
   client:
     register-with-eureka: true
     service-url:
-      defaultZone: http://ms-discovery:8723/eureka/
+      defaultZone: http://localhost:8723/eureka/
     enabled: true

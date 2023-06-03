@@ -1,0 +1,498 @@
+18:24:12.686 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+18:24:13.528 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+18:24:14.662 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://ms-config-server:8888. Will be trying the next url if available
+18:24:14.663 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://ms-config-server:8888/ms-gateway/test": ms-config-server; nested exception is java.net.UnknownHostException: ms-config-server
+18:24:14.665 [main] INFO  u.a.msgateway.MsGatewayApplicationKt - The following 1 profile is active: "test"
+18:24:15.515 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ade7f1bf-2bde-3666-8720-c4327bbe9f9e
+18:24:15.582 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:24:15.583 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:24:15.584 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:24:16.718 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+18:24:16.719 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+18:24:16.719 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+18:24:16.719 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+18:24:16.720 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+18:24:16.720 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+18:24:16.720 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+18:24:16.720 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+18:24:16.720 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+18:24:16.720 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+18:24:16.720 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+18:24:16.720 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+18:24:16.720 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+18:24:16.720 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+18:24:16.893 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+18:24:17.063 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+18:24:17.527 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+18:24:17.555 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+18:24:17.660 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+18:24:17.666 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:24:17.700 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+18:24:17.700 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+18:24:17.700 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+18:24:17.700 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+18:24:17.701 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+18:24:17.701 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+18:24:17.701 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+18:24:18.026 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+18:24:18.034 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+18:24:18.043 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+18:24:18.058 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1685744658057 with initial instances count: 2
+18:24:18.059 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-GATEWAY with eureka with status UP
+18:24:18.060 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685744658060, current=UP, previous=STARTING]
+18:24:18.062 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111: registering service...
+18:24:18.131 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111 - registration status: 204
+18:24:18.350 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8111
+18:24:18.351 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8111
+18:24:18.714 [main] INFO  u.a.msgateway.MsGatewayApplicationKt - Started MsGatewayApplicationKt in 6.97 seconds (JVM running for 7.505)
+18:28:48.787 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application MS-GATEWAY with eureka with status DOWN
+18:28:48.788 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685744928787, current=DOWN, previous=UP]
+18:28:48.788 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111: registering service...
+18:28:48.792 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111 - registration status: 204
+18:28:50.900 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+18:29:05.258 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+18:29:06.097 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+18:29:07.226 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://ms-config-server:8888. Will be trying the next url if available
+18:29:07.227 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://ms-config-server:8888/ms-gateway/test": ms-config-server; nested exception is java.net.UnknownHostException: ms-config-server
+18:29:07.229 [main] INFO  u.a.msgateway.MsGatewayApplicationKt - The following 1 profile is active: "test"
+18:29:08.054 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ade7f1bf-2bde-3666-8720-c4327bbe9f9e
+18:29:08.118 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:29:08.120 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:29:08.121 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:29:09.208 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+18:29:09.209 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+18:29:09.209 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+18:29:09.209 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+18:29:09.210 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+18:29:09.210 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+18:29:09.210 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+18:29:09.210 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+18:29:09.210 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+18:29:09.210 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+18:29:09.210 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+18:29:09.210 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+18:29:09.210 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+18:29:09.210 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+18:29:09.388 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+18:29:09.572 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+18:29:10.030 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+18:29:10.057 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+18:29:10.162 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+18:29:10.169 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:29:10.206 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+18:29:10.206 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+18:29:10.206 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+18:29:10.206 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+18:29:10.207 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+18:29:10.207 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+18:29:10.207 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+18:29:10.520 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+18:29:10.530 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+18:29:10.537 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+18:29:10.552 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1685744950551 with initial instances count: 3
+18:29:10.554 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-GATEWAY with eureka with status UP
+18:29:10.554 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685744950554, current=UP, previous=STARTING]
+18:29:10.558 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111: registering service...
+18:29:10.623 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111 - registration status: 204
+18:29:10.822 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8111
+18:29:10.823 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8111
+18:29:11.191 [main] INFO  u.a.msgateway.MsGatewayApplicationKt - Started MsGatewayApplicationKt in 6.904 seconds (JVM running for 7.424)
+18:34:10.218 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:38:48.666 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application MS-GATEWAY with eureka with status DOWN
+18:38:48.666 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685745528666, current=DOWN, previous=UP]
+18:38:48.667 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111: registering service...
+18:38:48.672 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111 - registration status: 204
+18:38:50.769 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+18:39:05.223 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+18:39:06.070 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+18:39:07.195 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://ms-config-server:8888. Will be trying the next url if available
+18:39:07.195 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://ms-config-server:8888/ms-gateway/test": ms-config-server; nested exception is java.net.UnknownHostException: ms-config-server
+18:39:07.197 [main] INFO  u.a.msgateway.MsGatewayApplicationKt - The following 1 profile is active: "test"
+18:39:08.110 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ade7f1bf-2bde-3666-8720-c4327bbe9f9e
+18:39:08.169 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:39:08.170 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:39:08.171 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:39:09.286 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+18:39:09.286 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+18:39:09.286 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+18:39:09.286 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+18:39:09.286 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+18:39:09.287 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+18:39:09.287 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+18:39:09.287 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+18:39:09.287 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+18:39:09.287 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+18:39:09.287 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+18:39:09.287 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+18:39:09.287 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+18:39:09.287 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+18:39:09.458 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+18:39:09.683 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+18:39:10.142 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+18:39:10.171 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+18:39:10.274 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+18:39:10.280 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:39:10.316 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+18:39:10.316 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+18:39:10.317 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+18:39:10.317 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+18:39:10.317 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+18:39:10.317 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+18:39:10.318 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+18:39:10.630 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+18:39:10.638 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+18:39:10.645 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+18:39:10.662 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1685745550662 with initial instances count: 3
+18:39:10.664 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-GATEWAY with eureka with status UP
+18:39:10.664 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685745550664, current=UP, previous=STARTING]
+18:39:10.668 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111: registering service...
+18:39:10.743 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111 - registration status: 204
+18:39:10.961 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8111
+18:39:10.962 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8111
+18:39:11.350 [main] INFO  u.a.msgateway.MsGatewayApplicationKt - Started MsGatewayApplicationKt in 7.134 seconds (JVM running for 7.667)
+18:41:32.737 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application MS-GATEWAY with eureka with status DOWN
+18:41:32.737 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685745692737, current=DOWN, previous=UP]
+18:41:32.738 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111: registering service...
+18:41:32.743 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111 - registration status: 204
+18:41:34.838 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+18:41:48.479 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+18:41:49.348 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+18:41:50.482 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://ms-config-server:8888. Will be trying the next url if available
+18:41:50.482 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://ms-config-server:8888/ms-gateway/test": ms-config-server; nested exception is java.net.UnknownHostException: ms-config-server
+18:41:50.484 [main] INFO  u.a.msgateway.MsGatewayApplicationKt - The following 1 profile is active: "test"
+18:41:51.441 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ade7f1bf-2bde-3666-8720-c4327bbe9f9e
+18:41:51.501 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:41:51.502 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:41:51.503 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:41:52.629 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+18:41:52.629 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+18:41:52.629 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+18:41:52.629 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+18:41:52.630 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+18:41:52.630 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+18:41:52.630 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+18:41:52.630 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+18:41:52.630 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+18:41:52.630 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+18:41:52.630 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+18:41:52.630 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+18:41:52.630 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+18:41:52.630 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+18:41:52.803 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+18:41:53.011 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+18:41:53.489 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+18:41:53.517 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+18:41:53.627 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+18:41:53.633 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:41:53.670 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+18:41:53.670 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+18:41:53.670 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+18:41:53.670 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+18:41:53.671 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+18:41:53.671 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+18:41:53.671 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+18:41:53.993 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+18:41:54.006 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+18:41:54.014 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+18:41:54.029 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1685745714028 with initial instances count: 3
+18:41:54.030 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-GATEWAY with eureka with status UP
+18:41:54.030 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685745714030, current=UP, previous=STARTING]
+18:41:54.033 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111: registering service...
+18:41:54.124 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111 - registration status: 204
+18:41:54.321 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8111
+18:41:54.322 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8111
+18:41:54.683 [main] INFO  u.a.msgateway.MsGatewayApplicationKt - Started MsGatewayApplicationKt in 7.126 seconds (JVM running for 7.654)
+18:42:54.582 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application MS-GATEWAY with eureka with status DOWN
+18:42:54.583 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685745774583, current=DOWN, previous=UP]
+18:42:54.583 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111: registering service...
+18:42:54.587 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111 - registration status: 204
+18:42:56.678 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+18:43:10.656 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+18:43:11.469 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+18:43:12.591 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://ms-config-server:8888. Will be trying the next url if available
+18:43:12.592 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://ms-config-server:8888/ms-gateway/test": ms-config-server; nested exception is java.net.UnknownHostException: ms-config-server
+18:43:12.594 [main] INFO  u.a.msgateway.MsGatewayApplicationKt - The following 1 profile is active: "test"
+18:43:13.475 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ade7f1bf-2bde-3666-8720-c4327bbe9f9e
+18:43:13.531 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:43:13.532 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:43:13.533 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:43:14.632 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+18:43:14.633 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+18:43:14.633 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+18:43:14.633 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+18:43:14.633 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+18:43:14.633 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+18:43:14.633 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+18:43:14.633 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+18:43:14.633 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+18:43:14.633 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+18:43:14.633 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+18:43:14.634 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+18:43:14.634 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+18:43:14.634 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+18:43:14.793 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+18:43:15.016 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+18:43:15.535 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+18:43:15.568 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+18:43:15.677 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+18:43:15.684 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:43:15.717 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+18:43:15.718 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+18:43:15.718 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+18:43:15.718 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+18:43:15.718 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+18:43:15.718 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+18:43:15.718 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+18:43:16.073 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+18:43:16.082 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+18:43:16.090 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+18:43:16.104 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1685745796104 with initial instances count: 3
+18:43:16.106 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-GATEWAY with eureka with status UP
+18:43:16.106 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685745796106, current=UP, previous=STARTING]
+18:43:16.109 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111: registering service...
+18:43:16.179 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111 - registration status: 204
+18:43:16.390 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8111
+18:43:16.391 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8111
+18:43:16.758 [main] INFO  u.a.msgateway.MsGatewayApplicationKt - Started MsGatewayApplicationKt in 7.031 seconds (JVM running for 7.622)
+18:45:30.095 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application MS-GATEWAY with eureka with status DOWN
+18:45:30.096 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685745930096, current=DOWN, previous=UP]
+18:45:30.096 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111: registering service...
+18:45:30.101 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111 - registration status: 204
+18:45:32.195 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+18:45:46.484 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+18:45:47.332 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+18:45:48.462 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://ms-config-server:8888. Will be trying the next url if available
+18:45:48.463 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://ms-config-server:8888/ms-gateway/test": ms-config-server; nested exception is java.net.UnknownHostException: ms-config-server
+18:45:48.466 [main] INFO  u.a.msgateway.MsGatewayApplicationKt - The following 1 profile is active: "test"
+18:45:49.368 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ade7f1bf-2bde-3666-8720-c4327bbe9f9e
+18:45:49.430 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:45:49.431 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:45:49.432 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:45:50.551 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+18:45:50.552 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+18:45:50.552 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+18:45:50.552 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+18:45:50.552 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+18:45:50.552 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+18:45:50.552 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+18:45:50.552 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+18:45:50.553 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+18:45:50.553 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+18:45:50.553 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+18:45:50.553 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+18:45:50.553 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+18:45:50.553 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+18:45:50.710 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+18:45:50.935 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+18:45:51.434 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+18:45:51.459 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+18:45:51.575 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+18:45:51.582 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:45:51.614 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+18:45:51.614 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+18:45:51.614 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+18:45:51.614 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+18:45:51.615 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+18:45:51.615 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+18:45:51.615 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+18:45:51.955 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+18:45:51.962 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+18:45:51.970 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+18:45:51.985 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1685745951984 with initial instances count: 3
+18:45:51.987 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-GATEWAY with eureka with status UP
+18:45:51.987 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685745951987, current=UP, previous=STARTING]
+18:45:51.990 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111: registering service...
+18:45:52.079 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111 - registration status: 204
+18:45:52.389 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8111
+18:45:52.389 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8111
+18:45:52.788 [main] INFO  u.a.msgateway.MsGatewayApplicationKt - Started MsGatewayApplicationKt in 7.282 seconds (JVM running for 7.814)
+18:50:51.622 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:55:51.633 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:00:51.639 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:05:51.644 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:10:17.789 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application MS-GATEWAY with eureka with status DOWN
+19:10:17.790 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685747417790, current=DOWN, previous=UP]
+19:10:17.790 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111: registering service...
+19:10:17.799 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111 - registration status: 204
+19:10:19.888 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+19:10:34.176 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+19:10:35.001 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+19:10:36.137 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://ms-config-server:8888. Will be trying the next url if available
+19:10:36.138 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://ms-config-server:8888/ms-gateway/test": ms-config-server; nested exception is java.net.UnknownHostException: ms-config-server
+19:10:36.142 [main] INFO  u.a.msgateway.MsGatewayApplicationKt - The following 1 profile is active: "test"
+19:10:37.073 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ade7f1bf-2bde-3666-8720-c4327bbe9f9e
+19:10:37.134 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:10:37.135 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:10:37.136 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:10:38.243 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+19:10:38.244 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+19:10:38.244 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+19:10:38.244 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+19:10:38.244 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+19:10:38.244 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+19:10:38.244 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+19:10:38.244 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+19:10:38.245 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+19:10:38.245 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+19:10:38.245 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+19:10:38.245 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+19:10:38.245 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+19:10:38.245 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+19:10:38.412 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+19:10:38.626 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+19:10:39.076 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+19:10:39.105 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+19:10:39.207 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+19:10:39.213 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:10:39.248 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+19:10:39.248 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+19:10:39.248 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+19:10:39.248 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+19:10:39.248 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+19:10:39.248 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+19:10:39.248 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+19:10:39.566 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+19:10:39.573 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+19:10:39.581 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+19:10:39.595 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1685747439594 with initial instances count: 3
+19:10:39.596 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-GATEWAY with eureka with status UP
+19:10:39.597 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685747439597, current=UP, previous=STARTING]
+19:10:39.599 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111: registering service...
+19:10:39.684 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111 - registration status: 204
+19:10:39.918 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8111
+19:10:39.919 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8111
+19:10:40.274 [main] INFO  u.a.msgateway.MsGatewayApplicationKt - Started MsGatewayApplicationKt in 7.051 seconds (JVM running for 7.581)
+19:15:39.258 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:20:39.270 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:25:39.283 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:30:39.299 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:35:39.315 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:40:39.328 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:45:39.345 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:50:39.361 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:55:39.365 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:00:39.373 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:05:39.376 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:10:26.738 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application MS-GATEWAY with eureka with status DOWN
+20:10:26.739 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685751026739, current=DOWN, previous=UP]
+20:10:26.739 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111: registering service...
+20:10:26.748 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111 - registration status: 204
+20:10:28.830 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+20:10:43.985 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+20:10:44.818 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+20:10:45.955 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://ms-config-server:8888. Will be trying the next url if available
+20:10:45.956 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://ms-config-server:8888/ms-gateway/test": ms-config-server; nested exception is java.net.UnknownHostException: ms-config-server
+20:10:45.959 [main] INFO  u.a.msgateway.MsGatewayApplicationKt - The following 1 profile is active: "test"
+20:10:46.860 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ade7f1bf-2bde-3666-8720-c4327bbe9f9e
+20:10:46.917 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:10:46.918 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:10:46.919 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:10:47.989 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+20:10:47.990 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+20:10:47.990 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+20:10:47.990 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+20:10:47.990 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+20:10:47.990 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+20:10:47.990 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+20:10:47.990 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+20:10:47.991 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+20:10:47.991 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+20:10:47.991 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+20:10:47.991 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+20:10:47.991 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+20:10:47.991 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+20:10:48.144 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+20:10:48.356 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+20:10:48.816 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+20:10:48.841 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+20:10:48.948 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+20:10:48.953 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:10:48.986 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+20:10:48.987 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+20:10:48.987 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+20:10:48.987 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+20:10:48.987 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+20:10:48.987 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+20:10:48.987 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+20:10:49.304 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+20:10:49.312 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+20:10:49.320 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+20:10:49.334 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1685751049334 with initial instances count: 3
+20:10:49.335 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-GATEWAY with eureka with status UP
+20:10:49.336 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685751049336, current=UP, previous=STARTING]
+20:10:49.340 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111: registering service...
+20:10:49.411 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111 - registration status: 204
+20:10:49.646 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8111
+20:10:49.647 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8111
+20:10:50.006 [main] INFO  u.a.msgateway.MsGatewayApplicationKt - Started MsGatewayApplicationKt in 7.034 seconds (JVM running for 7.616)
+20:15:49.000 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:20:49.002 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:25:49.004 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:30:49.005 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:35:49.020 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:40:49.026 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:45:49.037 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:50:49.043 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+20:55:49.057 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:00:49.068 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:05:49.074 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:09:14.652 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application MS-GATEWAY with eureka with status DOWN
+21:09:14.653 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685754554653, current=DOWN, previous=UP]
+21:09:14.653 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111: registering service...
+21:09:14.661 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111 - registration status: 204
+21:09:16.744 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+21:09:31.875 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+21:09:32.722 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+21:09:33.853 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://ms-config-server:8888. Will be trying the next url if available
+21:09:33.854 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://ms-config-server:8888/ms-gateway/test": ms-config-server; nested exception is java.net.UnknownHostException: ms-config-server
+21:09:33.856 [main] INFO  u.a.msgateway.MsGatewayApplicationKt - The following 1 profile is active: "test"
+21:09:34.715 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ade7f1bf-2bde-3666-8720-c4327bbe9f9e
+21:09:34.784 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:09:34.785 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:09:34.786 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:09:35.858 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+21:09:35.858 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+21:09:35.859 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+21:09:35.859 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+21:09:35.859 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+21:09:35.859 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+21:09:35.859 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+21:09:35.859 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+21:09:35.859 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+21:09:35.859 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+21:09:35.860 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+21:09:35.860 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+21:09:35.860 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+21:09:35.860 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+21:09:36.035 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+21:09:36.210 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+21:09:36.698 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+21:09:36.731 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+21:09:36.834 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+21:09:36.841 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:09:36.876 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+21:09:36.876 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+21:09:36.876 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+21:09:36.876 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+21:09:36.877 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+21:09:36.877 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+21:09:36.877 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+21:09:37.221 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+21:09:37.230 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+21:09:37.238 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+21:09:37.252 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1685754577251 with initial instances count: 3
+21:09:37.254 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-GATEWAY with eureka with status UP
+21:09:37.255 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685754577255, current=UP, previous=STARTING]
+21:09:37.257 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111: registering service...
+21:09:37.323 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/host.docker.internal:ms-gateway:8111 - registration status: 204
+21:09:37.538 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8111
+21:09:37.539 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8111
+21:09:37.917 [main] INFO  u.a.msgateway.MsGatewayApplicationKt - Started MsGatewayApplicationKt in 6.981 seconds (JVM running for 7.528)
+21:14:36.889 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:19:36.892 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:24:36.900 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:29:36.904 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:34:36.911 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:39:36.916 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:44:36.930 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+21:49:36.946 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
