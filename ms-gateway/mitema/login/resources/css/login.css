@@ -431,3 +431,15 @@ textarea:-ms-input-placeholder {
 .return-link{
     margin-bottom: 20px;
 }
+
+/* eye */
+#eye, #eye-confirm {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #adadad;
+    font-size: 22px;
+    z-index: 999;
+}

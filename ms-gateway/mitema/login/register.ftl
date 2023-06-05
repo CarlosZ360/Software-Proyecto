@@ -81,12 +81,14 @@
                 <span class="label-input100">Contraseña</span>
                 <input placeholder="Ingresa tu contraseña" type="password" id="password" class="kcInputClass ${properties.kcInputClass!}" name="password" autocomplete="new-password"/>
                 <span class="focus-input100" data-symbol="&#xf18f;"></span>
+                <i class="zmdi zmdi-eye" id="eye"></i>
             </div>
 
             <div class="kcFormGroupClass ${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('password-confirm',properties.kcFormGroupErrorClass!)}">
                 <span class="label-input100">Confirma tu contraseña</span>
                     <input placeholder="Ingresa nuevamente tu contraseña" type="password" id="password-confirm" class="kcInputClass ${properties.kcInputClass!}" name="password-confirm" />
                 <span class="focus-input100" data-symbol="&#xf190;"></span>
+                <i id="eye-confirm" class="zmdi zmdi-eye"></i>
             </div>
             </#if>
 

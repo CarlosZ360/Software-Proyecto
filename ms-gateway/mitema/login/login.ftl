@@ -39,6 +39,7 @@
                            aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>"
                     />
                     <span class="focus-input100" data-symbol="&#xf190;"></span>
+                    <i class="zmdi zmdi-eye" id="eye"></i>
 
                     <#if usernameHidden?? && messagesPerField.existsError('username','password')>
                         <span id="input-error" class="${properties.kcInputErrorMessageClass!}" aria-live="polite">
@@ -114,5 +115,4 @@
             </div>
         </#if>
     </#if>
-
 </@layout.registrationLayout>

@@ -33,13 +33,13 @@ spring:
 
       routes:
         - id: ms-story
-          uri: http://localhost:7777
+          uri: lb://ms-story
           predicates:
             - Path=/historias/**
           filters:
             - RewritePath=/historias/(?<path>.*), /$\{path}
         - id: ms-user
-          uri: http://localhost:8008
+          uri: lb://ms-user
           predicates:
             - Path=/usuarios/**
           filters:
